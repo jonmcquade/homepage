@@ -1,0 +1,47 @@
+nav {
+    font-size: 1.1em;
+}
+
+nav .home li label {
+    display: inline-block !important;
+}
+
+nav ul li i {
+    margin-right: 0.5em;
+}
+
+nav .home {
+    white-space: nowrap;
+    min-width: 75%;
+}
+
+nav .social {
+    min-width: 15%;
+}
+
+nav .social li {
+    margin: 0 0.25em 0 0;
+    display: inline-flex;
+}
+
+section .wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .project,
+section .article {
+    width: 45%;
+    margin: 1em 1em;
+}
+
+.header-content {
+    margin-top: 0px;
+    background-position: center -25%;
+    background-size: cover;
+    resize: both;
+}
+
+.header-content .nav-menu {
+    display: none;
+}

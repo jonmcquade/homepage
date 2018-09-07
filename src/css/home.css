@@ -1,0 +1,415 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+body,
+#a {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: #444444;
+    color: #222;
+}
+
+a {
+    color: white;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrap {
+    display: inline-flex;
+    width: 100%;
+}
+
+.hidden {
+    position: relative;
+    left: -9999;
+}
+
+i {
+    margin-right: .5em;
+}
+
+
+/** Navigation **/
+
+nav {
+    position: fixed;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.5em;
+    padding: 0;
+    height: 2.5em;
+}
+
+nav label {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    display: contents;
+    width: fit-content;
+}
+
+nav ul li {
+    margin: 0 2%;
+    display: inline-block;
+    width: fit-content;
+}
+
+nav ul li i {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:active {
+    color: #1E90FF;
+}
+
+nav a label {
+    cursor: pointer;
+    cursor: hand;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.50);
+    transition: 0.25s color ease-in;
+}
+
+nav .home {
+    min-width: 60%;
+    font-size: 1.5em;
+}
+
+nav .home li {
+    width: fit-content;
+}
+
+nav .home ul li:last {
+    margin-right: 0;
+}
+
+nav .social {
+    border-radius: 8px;
+    padding: 0px 2px 0px 10px;
+    position: fixed;
+    min-width: 4.8em;
+    padding: 0;
+    right: 0em;
+    top: 1em;
+    transform: scale(0.8);
+}
+
+nav .social li {
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    margin: 0;
+    width: 1.5em;
+    display: inline-flex;
+    padding-bottom: 0.05em;
+}
+
+nav .social li a {
+    min-width: 33%;
+    margin: auto .25em;
+}
+
+nav .social li a i {
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    min-width: 1.5em;
+    min-height: 1em;
+    padding: .20em 0 .20em;
+    transform: scale(5%);
+}
+
+
+/** Header **/
+
+header {
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+
+.tagline {
+    margin: 20% 15% 5% 15%;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 2em;
+    padding: 1em;
+    color: white;
+    transform: scale(0.8);
+}
+
+.header-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 90vh;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    background: url(/img/tacoma-dome.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: auto auto;
+    resize: both;
+    box-shadow: 0 0px 6px 4px black;
+}
+
+.header-content a {
+    padding: 0;
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.header-content a:hover {
+    text-decoration: underline;
+}
+
+.header-content a:first {
+    margin-top: 20px;
+    position: relative;
+}
+
+.header-content .nav-menu {
+    display: block;
+}
+
+.logo-wrapper {
+    position: relative;
+    margin: auto auto;
+    display: block;
+}
+
+.logo {
+    border-radius: 50%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.75);
+}
+
+.btn-email {
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 1em;
+    color: white;
+}
+
+.nav-menu {
+    margin-top: 1em;
+}
+
+.btn {
+    border-radius: 1em;
+    width: 50%;
+    margin: auto auto;
+}
+
+.nav-menu a {
+    color: black;
+    padding-left: 0.25em;
+}
+
+.nav-menu label {
+    cursor: pointer;
+}
+
+.nav-menu a:hover {
+    text-decoration: none;
+}
+
+.nav-menu .dropdown-menu {
+    color: white;
+}
+
+.nav-menu i {
+    margin-right: 0.25em;
+}
+
+.btn-secondary:not(:disabled):not(.disabled),
+.btn-secondary:not(:disabled):not(.disabled),
+.show>.btn-secondary.dropdown-toggle {
+    background-color: white;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):hover,
+.btn-secondary:not(:disabled):not(.disabled):hover,
+.show>.btn-secondary.dropdown-toggle {
+    background-color: #333;
+}
+
+
+/** Content **/
+
+
+/** Projects **/
+
+section {
+    text-align: center;
+    width: 90%;
+    margin: auto auto;
+}
+
+.section-anchor {
+    position: absolute;
+    left: -500em;
+}
+
+.section-header {
+    box-shadow: 0px 0px 4px 2px #000000;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.section-header,
+.section h2,
+h3 {
+    color: black;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.85);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0.25em;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+section h2 {
+    font-size: 3em;
+    box-shadow: 0 6px 4px -2px black;
+    width: 100%;
+    background-color: white;
+}
+
+section h3 {
+    box-shadow: 0px 4px 4px -2px black;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 0.5em;
+    color: white;
+}
+
+section .wrap {
+    display: block;
+}
+
+section .design ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .project .examples li {
+    width: 45%;
+    text-align: center;
+}
+
+section .project .examples li a img,
+section .project .hero {
+    width: 65%;
+    box-shadow: 0 6px 4px -4px black;
+}
+
+section .project,
+section .history,
+section .article {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 0.75em;
+    color: white;
+    text-align: left;
+    box-shadow: 0 6px 4px -4px black;
+    /** box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.85); **/
+    margin: 1em 0;
+}
+
+section .project .project-body,
+section .project .article-body {
+    padding: 0.5em 1em;
+}
+
+section .project h3,
+section .history h3,
+section .article h3 {
+    box-shadow: 0px 4px 4px -2px black;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+section .project a,
+section .history a,
+section .article a {
+    color: #1E90FF;
+}
+
+section .project .link {
+    text-align: center;
+}
+
+section .project .links {
+    display: flex;
+}
+
+section .project .links p {
+    width: 45%;
+    text-align: center;
+}
+
+section .history {
+    width: 100%;
+    text-align: center;
+}
+
+section .history-wrap {
+    margin: 0 !important;
+}
+
+section .article img {
+    width: 100%;
+    height: auto;
+}
+
+section .article p {
+    text-align: center;
+}
+
+
+/** Footer **/
+
+footer {
+    border: .25em white solid;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 2px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+    width: 50%;
+    margin: 1em auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    text-align: center;
+}
+
+footer a {
+    color: #1E70FF;
+}
