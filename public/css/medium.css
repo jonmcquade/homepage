@@ -1,0 +1,43 @@
+nav {
+    font-size: 0.8em;
+    padding-top: .25em;
+}
+
+nav .home li label {
+    display: inline-block !important;
+}
+
+nav ul li i {
+    margin-right: 0.5em;
+}
+
+.home {
+    padding-top: 0 !important;
+    font-size: 0.8em;
+    min-width: 90%;
+    white-space: nowrap;
+}
+
+.home li {
+    width: 17%;
+}
+
+nav .social {
+    min-width: 15%;
+    top: 1.25em;
+}
+
+nav .social li {
+    margin: 0 0.25em 0 0;
+    display: inline-flex;
+}
+
+.header-content {
+    margin-top: 0px;
+    background-position: top center;
+    background-size: cover;
+}
+
+.header-content .nav-menu {
+    display: none;
+}

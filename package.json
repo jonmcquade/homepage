@@ -67,7 +67,7 @@
     "license": "MIT",
     "name": "html5-boilerplate",
     "scripts": {
-        "build": "gulp build",
+        "build": "webpack",
         "test": "gulp archive && mocha --require babel-core/register --reporter spec --timeout 5000",
         "start:dev": "webpack-dev-server -d --watch --history-api-fallback --mode=development --host 0.0.0.0 --port 3333"
     },
@@ -84,5 +84,8 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/h5bp/html5-boilerplate.git"
+    },
+    "dependencies": {
+        "@babel/register": "^7.0.0"
     }
 }
