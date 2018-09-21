@@ -21,19 +21,19 @@ $( document ).ready(function() {
   
   // Scrollto events for header/nav
   $('#home').unbind().click(function() {
-    $.scrollTo(0,{duration: 500});
+    $.scrollTo($('a[name=top]').offset().top - 50,{duration: 500});
   });
 
   $('#projects').unbind().click(function() {
-    $.scrollTo(820,{duration: 500});
+    $.scrollTo($('a[name=projects]').offset().top - 50,{duration: 500});
   });
 
   $('#history').unbind().click(function() {
-    $.scrollTo(3040,{duration: 500});
+    $.scrollTo($('a[name=history]').offset().top - 50,{duration: 500});
   });
 
   $('#articles').unbind().click(function() {
-    $.scrollTo(3400,{duration: 500});
+    $.scrollTo($('a[name=articles]').offset().top - 50,{duration: 500});
   });
 
 });
