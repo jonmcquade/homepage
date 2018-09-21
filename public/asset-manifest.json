@@ -7,8 +7,8 @@
   "browserconfig.xml": "/browserconfig.xml",
   "css/home.css": "/css/home.css",
   "css/large.css": "/css/large.css",
-  "css/main.css": "/css/main.css",
   "css/medium.css": "/css/medium.css",
+  "css/main.css": "/css/main.css",
   "css/small.css": "/css/small.css",
   "css/xlarge.css": "/css/xlarge.css",
   "doc/css.md": "/doc/css.md",
@@ -26,8 +26,8 @@
   "js/plugins.js": "/js/plugins.js",
   "js/vendor/modernizr.min.js": "/js/vendor/modernizr.min.js",
   "robots.txt": "/robots.txt",
-  "tile-wide.png": "/tile-wide.png",
   "site.webmanifest": "/site.webmanifest",
+  "tile-wide.png": "/tile-wide.png",
   "tile.png": "/tile.png",
   "doc/html.md": "/doc/html.md",
   "icon-apple.jpg": "/icon-apple.jpg",
@@ -39,6 +39,6 @@
   "favicon.ico": "/favicon.ico",
   "img/iwc-home-concept.jpg": "/img/iwc-home-concept.jpg",
   "img/iwc-color-models.jpg": "/img/iwc-color-models.jpg",
-  "img/tacoma-dome.jpg": "/img/tacoma-dome.jpg",
-  "doc/jonathan-mcquade.pdf": "/doc/jonathan-mcquade.pdf"
+  "doc/jonathan-mcquade.pdf": "/doc/jonathan-mcquade.pdf",
+  "img/tacoma-dome.jpg": "/img/tacoma-dome.jpg"
 }
